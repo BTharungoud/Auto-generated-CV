@@ -82,3 +82,14 @@ main>.right>.block1{
 .print{
     display: none;
 }
+label{
+    display: inline-block;
+    width: 150px;
+    
+}
+input{
+    border-radius: 5px;
+}
+textarea{
+    border-radius: 5px;
+}
