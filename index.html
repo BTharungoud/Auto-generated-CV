@@ -13,16 +13,16 @@
         <div class="left">
             <form>
                 <!-- Name , Email , Phone , Github , Linkedin -->
-                <label for="Name">Name:</label>
-                <input type="text" name="Name" id="Name" placeholder="name"><br>
-                <label for="Email">Email:</label>
-                <input type="email" name="Email" id="Email" placeholder="email"><br>
-                <label for="Phone">Phone:</label>
-                <input type="number" name="Phone" id="Phone" placeholder="Phone"><br>
-                <label for="Github">Github:</label>
-                <input type="url" name="Github" id="Github" placeholder="Github"><br>
-                <label for="Linkedin">Linkedin:</label>
-                <input type="url" name="Linkedin" id="Linkedin" placeholder="Linkedin"><br>
+                <label for="fName">Name:</label>
+                <input type="text" name="fName" id="fName" placeholder="name" ><br>
+                <label for="email">Email:</label>
+                <input type="email" name="Email" id="email" placeholder="email"><br>
+                <label for="phone">Phone:</label>
+                <input type="number" name="Phone" id="phone" placeholder="Phone"><br>
+                <label for="github">Github:</label>
+                <input type="url" name="Github" id="github" placeholder="Github"><br>
+                <label for="linkedin">Linkedin:</label>
+                <input type="url" name="Linkedin" id="linkedin" placeholder="Linkedin"><br>
                 <fieldset>
                     <legend>Education</legend>
                     <!-- Degree , College , Starting Year , Passing Year , CGPA -->
@@ -30,10 +30,10 @@
                     <input type="text" name="Degree" id="Degree" placeholder="Degree"><br>
                     <label for="College">College:</label>
                     <input type="text" name="College"  id="College" placeholder="College"><br>
-                    <label for="Starting Year">Starting Year:</label>
-                    <input type="date" name="Starting Year" id="Starting Year" placeholder="Starting Year"><br>
-                    <label for="Passing Year">Passing Year:</label>
-                    <input type="date" name="Passing Year" id="Passing Year" placeholder="Passing Year"><br>
+                    <label for="StartingYear">Starting Year:</label>
+                    <input type="date" name="StartingYear" id="StartingYear" placeholder="Starting Year"><br>
+                    <label for="PassingYear">Passing Year:</label>
+                    <input type="date" name="PassingYear" id="PassingYear" placeholder="Passing Year"><br>
                     <label for="CGPA">CGPA:</label>
                     <input type="number" name="CGPA" id="CGPA" placeholder="CGPA"><br>
                 </fieldset>
@@ -48,8 +48,8 @@
                     <!-- Project , Description , Link -->
                     <label for="Project">Project:</label>
                     <input type="text" name="Project" id="Project" placeholder="Project"><br>
-                    <label for="Description">Description:</label>
-                    <textarea name="Description" id="Description" cols="20" rows="12"  placeholder="Description"></textarea><br>
+                    <label for="e_description">Description:</label>
+                    <textarea name="Description" id="e_description" cols="20" rows="12"  placeholder="Description"></textarea><br>
                     <label for="Link">Link:</label>
                     <input type="url" name="Link" id="Link" placeholder="Link" ><br>
                 </fieldset>
@@ -74,17 +74,45 @@
             <div class="block1">
                 <!-- Name -->
                 <!--Email , Phone , Github , Linkedin  -->
+                <h1  id="name_resume"></h1>
+                <nav>
+                    <a  id="email_resume" href="email"></a> 
+                    <a  id="phone_resume" href="phone"></a> 
+                    <a  id="github_resume" href="github"></a> 
+                    <a  id="linkedin_resume" href="linkedin"></a>
+                </nav>
             </div>
             <div class="block2">
                 <h2>Education</h2>
+                <hr class="abc"><hr/>
+                <h2 id="college_name"></h2>
+                <h4 id="degree_resume"></h4>
+                <p  id="startingyear_resume"></p>
+                <p id="passingyear_resume" ></p>
+                <p id="cgpa_resume"></p>
             </div>
             <div class="block3">
+                <h2 class="right_headings">Skills</h2>
+                <hr class="abc"><hr/>
+                <h2 id="skills_resume"></h2>
             </div>
             <div class="block4">
-                <h2>Project</h2>
+                <h2 class="right_headings">Project</h2>
+                <hr class="abc"><hr/>
+                <h2 id="project_resume"></h2>
+                <br>
+                <p id="projectdescription_resume"></p>
+                
+                <a id="link_resume" href=""></a>
+                
             </div>
             <div class="block5">
-                <h2>Experience</h2>
+                <h2 class="right_headings">Experience</h2>
+                <hr class="abc"><hr/>
+                <h2 id="designation_resume"></h2>
+                <h3 id="company_resume"></h3>
+                <h4 id="duration_resume"></h4>
+                <p id="experiencedescription_resume"></p>
             </div>
             <button class="btn print" onclick="handlePrint()">Print</button>
         </div>
